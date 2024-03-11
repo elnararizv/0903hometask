@@ -35,6 +35,7 @@
 // for (var i = 0; i < arr.length; i++) {
 //     if (arr[i] % 2 === 0) {
 //      arr.splice(i, 1);
+//              i--
 //     }
 // }
 //  console.log(arr);
@@ -72,11 +73,60 @@
 // Tapsiriq 8:
 // Bu arrayin icindeki en boyuk ededi tapin.
 
-var arr = [2, 45, 3, 67, 34, 567, 34, 345, 123]
-var findNumber = arr[0]
+// var arr = [2, 45, 3, 67, 34, 567, 34, 345, 123]
+// var findNumber = arr[0]
 
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > findNumber) {
-        findNumber = arr[i]
-    }
-} console.log(findNumber)
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > findNumber) {
+//         findNumber = arr[i]
+//     }
+// } console.log(findNumber)
+// ---------------------------------------------------------------------
+
+// var arr = [6, 2, 1, 8, 10]
+// var minNum = arr[0]
+// var maxNum = arr[0];
+// var newArr = []
+// for (var i = 0; i < arr.length; i++) {
+//     if (maxNum < arr[i]) {
+//         maxNum = arr[i];
+//     }
+//     if (minNum > arr[i]) {
+//         minNum = arr[i];
+//     }
+
+// }
+// console.log(minNum)
+// console.log(maxNum)
+// for (var i = 0; i < arr.length; i++) {
+//     if (arr[i] !== minNum && arr[i] !== maxNum) {
+//         newArr.push(arr[i]);
+//     }
+// } console.log(newArr);
+
+// var sum = 0
+// for (let i = 0; i < newArr.length; i++) {
+//     sum = sum + newArr[i]
+// }
+// console.log(sum);
+// ------------------------------------------------------------
+
+// Tapsiriq 1:
+// 1den 100e qeder ededlerin icinden 10luqlari console-a cixardin.
+
+// for (let i = 1; i < 100; i++) {
+//    if (i%10===0) {
+//     console.log(i);
+//    }
+// }
+// ------------------------------------------------------------------------------
+// Tapsiriq 2:
+// Hemen 10luqlarin cemini tapin
+var sum=0
+for (let i = 1; i < 100; i++) {
+    if (i%10===0) {
+       sum+=i
+       }
+}
+console.log(sum);
+
